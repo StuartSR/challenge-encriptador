@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="encriptador.css" />
+</head>
+<header class="principio">
+    <img src="Imagenes/Logo.svg" alt="logo">
+</header>
+<body>
+    <section>
+        <img class="rectanguloDerecha" src="Imagenes/Rectangle 1.png" alt="rectanguloDerecha">
+    </section>
+    <main>
+        <div> 
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+              </div>
+            <div>
+                <textarea class="cuadroTexto" name="textoUsuario" id="textoUsuario" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div>
+                <div class="encriptado">
+                    <div class="mensaje-encriptado" id="mensaje-encriptado"></div>
+                    <h2 id="titulo-mensaje">Esperando texto para encriptar o desencriptar</h2>
+                    <p id="parrafo"></p>
+                 <textarea class="cuadroQueRecibe" name="texto" id="textoEncriptado" cols="30" rows="10" placeholder="Esperando texto"></textarea>
+                </div>
+            </div>
+           
+        
+            <div class="botones" br>
+                <button onclick="encriptar()" class="encriptar">Encriptar</button>
+                <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+                <button onclick="copiar()" class="copiar">Copiar</button>
+            </div> 
+        </div>
+        
+    </main>
+</body>
+<script src="encriptador.js"></script>
+
+<footer>
+    <copyright>Copyright-SSR-2024</copyright>
+</footer>
+</html>
